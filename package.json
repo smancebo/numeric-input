@@ -1,21 +1,21 @@
 {
-  "name": "translate",
+  "name": "safe.numeric-text",
   "version": "1.0.0",
-  "description": "Angular Filter for string management",
-  "main": "translate.js",
+  "description": "Angular directive to make your text input numeric",
+  "main": "source/safe.numeric-text.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/smancebo/translate.git"
+    "url": "git+https://github.com/smancebo/numeric-input.git"
   },
   "author": "Samuel J Mancebo",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/smancebo/translate/issues"
+    "url": "https://github.com/smancebo/numeric-input/issues"
   },
-  "homepage": "https://github.com/smancebo/translate#readme",
+  "homepage": "https://github.com/smancebo/numeric-input#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-jshint": "^2.0.2",
