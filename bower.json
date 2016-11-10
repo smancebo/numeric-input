@@ -1,0 +1,20 @@
+{
+  "name": "angular-safe.numeric-text",
+  "description": "AngularJs directive for make your input text numeric",
+  "main": "source/safe.numeric-text.js",
+  "authors": [
+    "Samuel J Mancebo"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "angular-numeric-text",
+    "safe.numeric-text"
+  ],
+  "homepage": "https://github.com/smancebo/numeric-input",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
