@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="masktest">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <style>
+        .has-error {
+            border: 1px solid red
+        }
+    </style>
+</head>
+
+<body ng-controller="mask">
+
+    <div class="container">
+      <h1>Numeric Input</h1>
+        <p>
+            <label>Basic Configuration</label>
+        </p>
+        <p>
+            <input text="text" class="form-control" numeric-text ng-model="txtNumericoBasico" /> {{txtNumericoBasico}}
+        </p>
+
+        <p>
+            <label>Minimum and Maximum values (min: 45.50; max: 45.60)</label>
+        </p>
+        <p>
+            <input text="text" class="form-control" numeric-text ng-model="txtNumericoMinMax" min-value="45.50" max-value="45.60" step="0.01" format="decimal" /> {{txtNumericoMinMax}}
+        </p>
+
+        <p>
+            <label>Currency Format</label>
+        </p>
+        <p>
+            <input text="text" class="form-control"  numeric-text ng-model="txtNumericoMoneda" step="0.01" format="currency" /> {{txtNumericoMoneda}}
+        </p>
+
+        <p>
+            <label>Percentage Format</label>
+        </p>
+        <p>
+            <input text="text" class="form-control"  numeric-text ng-model="txtNumericoPorciento" min-value="-100" max-value="100" decimal-places='0' step="0.01" format="percentage" /> {{txtNumericoPorciento}}
+        </p>
+        <p>
+            <label>4 Decimal Digits</label>
+        </p>
+        <p>
+            <input text="text" class="form-control" numeric-text ng-model="txtNumerico4Digitos" step="0.0001" format="decimal" decimal-places="4" /> {{txtNumerico4Digitos}}
+        </p>
+    </div>
+
+
+
+    <br />
+    <br />
+    <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular-safe.numeric-text/dist/safe.numeric-text.min.js" charset="utf-8"></script>
+    <script src="app/app.js" charset="utf-8"></script>
+
+
+</body>
+
+</html>

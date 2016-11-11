@@ -6,7 +6,7 @@
 #### via Bower
 
 ```
-bower install --save angular-safe.numeric-text
+bower install --save angular-safe.numeric-input
 ```
 
 ## Description
@@ -86,7 +86,7 @@ index.html
             <input text="text" numeric-text ng-model="txtNumeric4Digits" step="0.0001" format="decimal" decimal-places="4" /> {{txtNumeric4Digits}}
         </p>
     </div>
-    
+
 
     <script src="bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -102,16 +102,10 @@ index.html
 
 Numeric-Input accepts attributes for configure the behavior of the input controller
 
-* `format` - _String_ : This is used for specify the format of the numeric input, valid formats __int__ (Default), __decimal__, __currency__, __percentage__ 
+* `format` - _String_ : This is used for specify the format of the numeric input, valid formats __int__ (Default), __decimal__, __currency__, __percentage__
 * `decimal-places` - _Numeric_ : Used for specify the decimal places of numbers (this only works using __decimal__ || __currency__ || __percentage__ formats)
 * `step` - _Numeric_ : Used for specify the steps in numeric input, it will add or substract the value of this property when hit the `UP` (add) key or `Down` (substract) Key
 * `max-value` - _Numeric_ : Specify the max value of the input
 * `min-value` - _Numeric_ : Specify the min value of the input
 * `currency-symbol` - _String_ : Override the default symbol when using __currency__ format
-* `error-class` - _String_ : Specify the class used when input is invalid (default value is __'has_error'__) 
-
-
-
-
-
-
+* `error-class` - _String_ : Specify the class used when input is invalid (default value is __'has_error'__)
