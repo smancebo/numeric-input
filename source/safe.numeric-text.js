@@ -207,16 +207,7 @@
             });
             input.unbind('focus');
             input.on('focus', function(event) {
-                setTimeout((function(el) {
-                    var strLength = el.value.length;
-                    return function() {
-                        if (el.setSelectionRange !== undefined) {
-                            el.setSelectionRange(strLength, strLength);
-                        } else {
-                            $(el).val(el.value);
-                        }
-                    };
-                }(this)), 0);
+                $(this).select();
             });
             input.on('keyup', function(event) {
                 validate();
