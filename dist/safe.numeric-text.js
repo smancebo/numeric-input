@@ -205,9 +205,11 @@
                 applyInputValue(getInputValue(), event);
                 validate();
             });
-            input.unbind('focus');
-            input.on('focus', function(event) {
-                $(this).select();
+            input.unbind('click');
+            input.on('click', function(event) {
+                var _this = $(this)[0];
+                _this.setSelectionRange(0, _this.value.length);
+
             });
             input.on('keyup', function(event) {
                 validate();
