@@ -34,14 +34,14 @@
             <label>Currency Format</label>
         </p>
         <p>
-            <input text="text" class="form-control"  numeric-text ng-model="txtNumericoMoneda" step="0.01" format="currency" /> {{txtNumericoMoneda}}
+            <input text="text" class="form-control"  numeric-text ng-model="txtNumericoMoneda" currency-symbol="USD$" step="0.01" format="currency" /> {{txtNumericoMoneda}}
         </p>
 
         <p>
             <label>Percentage Format</label>
         </p>
         <p>
-            <input text="text" class="form-control"  numeric-text ng-model="txtNumericoPorciento" min-value="-100" max-value="100" decimal-places='0' step="0.01" format="percentage" /> {{txtNumericoPorciento}}
+            <input text="text" class="form-control"  numeric-text ng-model="txtNumericoPorciento" min-value="-100" max-value="100" decimal-places='0' step="1" format="percentage" /> {{txtNumericoPorciento}}
         </p>
         <p>
             <label>4 Decimal Digits</label>
