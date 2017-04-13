@@ -185,13 +185,20 @@
                     return;
                 }
                 if (event.shiftKey === false) {
+                    var isFromNumpad = false;
+                    
+                    if(event.keyCode >= 96 && event.keyCode <= 105){
+                        isFromNumpad = true;
+                    }
+                    if(!isFromNumpad){
+                    
+                        if (!numberMatch.test(String.fromCharCode(event.keyCode))) {
+                            if (event.keyCode != 8 &&
+                                event.keyCode != 37 &&
+                                event.keyCode != 39) {
 
-                    if (!numberMatch.test(String.fromCharCode(event.keyCode))) {
-                        if (event.keyCode != 8 &&
-                            event.keyCode != 37 &&
-                            event.keyCode != 39) {
-
-                            event.preventDefault();
+                                event.preventDefault();
+                            }
                         }
                     }
                 } else {
